@@ -1,0 +1,48 @@
+# Application 'srcdrupal8cert', environment 'dev'.
+dev:
+  root: /var/www/html/srcdrupal8cert.dev/docroot
+  ac-site: srcdrupal8cert
+  ac-env: dev
+  ac-realm: devcloud
+  uri: srcdrupal8certy9t7nibosd.devcloud.acquia-sites.com
+  dev.livedev:
+    parent: '@srcdrupal8cert.dev'
+    root: /mnt/gfs/srcdrupal8cert.dev/livedev/docroot
+  host: srcdrupal8certy9t7nibosd.ssh.devcloud.acquia-sites.com
+  user: srcdrupal8cert.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'srcdrupal8cert', environment 'prod'.
+prod:
+  root: /var/www/html/srcdrupal8cert.prod/docroot
+  ac-site: srcdrupal8cert
+  ac-env: prod
+  ac-realm: devcloud
+  uri: srcdrupal8certox7efmzgpk.devcloud.acquia-sites.com
+  prod.livedev:
+    parent: '@srcdrupal8cert.prod'
+    root: /mnt/gfs/srcdrupal8cert.prod/livedev/docroot
+  host: srcdrupal8certox7efmzgpk.ssh.devcloud.acquia-sites.com
+  user: srcdrupal8cert.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'srcdrupal8cert', environment 'test'.
+test:
+  root: /var/www/html/srcdrupal8cert.test/docroot
+  ac-site: srcdrupal8cert
+  ac-env: test
+  ac-realm: devcloud
+  uri: srcdrupal8certld72muemgh.devcloud.acquia-sites.com
+  test.livedev:
+    parent: '@srcdrupal8cert.test'
+    root: /mnt/gfs/srcdrupal8cert.test/livedev/docroot
+  host: srcdrupal8certld72muemgh.ssh.devcloud.acquia-sites.com
+  user: srcdrupal8cert.test
+  paths:
+    drush-script: drush9
+
+
